@@ -83,7 +83,36 @@
             </div>
         </div>
     </div>
-
+    <!--Staff view modal-->
+    <div id="staff-view" class="modal fade">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button class="close" data-dismiss="modal">&times;</button>
+                    <div class="staff-single-data">
+                        <img src="photos/staff/47df0a056f1ddeb7e6f2e55a13a9ee81IMG_0608.JPG" alt="">
+                        <h2>Hasibul Hasan</h2>
+                        <h3>+8801747979703</h3>
+                        <table class="table table-striped">
+                            <tr>
+                                <td>Name</td>
+                                <td id="name"></td>
+                            </tr>
+                            <tr>
+                                <td>Email</td>
+                                <td id="email"></td>
+                            </tr>
+                            <tr>
+                                <td>Cell</td>
+                                <td id="cell"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
 
 
 

@@ -54,3 +54,14 @@ input[type="submit"]  {
 	text-align: right;
 	width: 160px;
 }
+#staff-view{
+	text-align: center;
+}
+#staff-view img{
+	width: 200px;
+	height: 200px;
+	display: block;
+	margin: auto;
+	border-radius: 50%;
+
+}

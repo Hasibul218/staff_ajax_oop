@@ -37,8 +37,13 @@
         public function allStaff(){
             return $this ->all('staff');
         }
-
-
+        /**
+         * show single staff
+         */
+        public function showStaff($id)
+        {
+            return $this->find('staff',$id);
+        }
 
 
     }

@@ -47,7 +47,32 @@
                 }
             });
         }
+        /*staff single data view*/
+        $(document).on('click', '#staff-view-id', function(e){
+            e.preventDefault();
+            let id = $(this).attr('view-id');
 
+            $.ajax({
+                url : 'ajax_template/staff-view.php',
+                method : 'POST',
+                data: {user_id : id},
+                success : function(data){
+                    let singleStaff = JSON.parse(data)
+                    $('.staff-single-data img').attr('src', 'photos/staff/' + singleStaff.photo);
+                    $('h2').html(singleStaff.name);
+                    $('h3').html(singleStaff.cell);
+                    $('td#name').html(singleStaff.name);
+                    $('td#email').html(singleStaff.email);
+                    $('td#cell').html(singleStaff.cell);
+                },
+            });
+            $('#staff-view').modal('show');
+        });
+        /**/
+        $(document).on('click', function() {
+
+        });
+        /**/
 
 
 
