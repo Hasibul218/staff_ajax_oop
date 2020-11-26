@@ -17,6 +17,7 @@
         <br>
         <br>
 		<div class="card shadow">
+            <div class="delete-msg"></div>
 			<div class="card-body">
 				<h2>All Staff</h2>
 				<table class="table table-striped">
@@ -69,9 +70,9 @@
 
                         <div class="form-group">
                             <img style="max-width: 100%;" id="staff-photo-load" src="" alt="">
-                            <label for="">Photo</label> <br><br>
                             <input name="photo" style="display: none;" class="form-control" type="file" id="staff-photo">
-                            <label for="staff-photo"><img style="width: 100px; cursor: pointer;" src="assets/media/img/12634-200.png" alt=""></label>
+                            <label for="staff-photo"><img id="img-loader" style="width: 100px; cursor: pointer;" src="assets/media/img/12634-200.png" alt=""></label><br>
+                            <a href="#" id="remove-photo">Remove photo</a>
                             
                         </div>
                         <div class="form-group">

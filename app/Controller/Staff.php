@@ -44,6 +44,11 @@
         {
             return $this->find('staff',$id);
         }
-
-
+        /**
+         * delete staff
+         */
+        public function deleteStaff($id)
+        {
+            return $this->delete('staff', $id);
+        }
     }

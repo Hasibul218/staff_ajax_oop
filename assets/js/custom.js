@@ -5,8 +5,17 @@
         $('input#staff-photo').change(function(e){
             let file_url  = URL.createObjectURL(e.target.files[0]);
             $('img#staff-photo-load').attr('src', file_url);
+            $('img#img-loader').hide();
+            $('a#remove-photo').show();
         });
-
+        /*Remove Photos*/
+        $(document).on('click','a#remove-photo', function(e){
+            e.preventDefault();
+            $('img#staff-photo-load').attr('src', '');
+            $('img#img-loader').show();
+            $('a#remove-photo').hide();
+        });
+        /**/
         // Staff form validation
         $(document).on('submit','form#staff-form', function(event){
             event.preventDefault();
@@ -29,6 +38,8 @@
                         $('.modal-msg').html(data);
                         $('form#staff-form')[0].reset();
                         $('img#staff-photo-load').attr('src', '');
+                        $('img#img-loader').show();
+                        $('a#remove-photo').hide();
                         allStaff();
                     }
                 });
@@ -68,9 +79,26 @@
             });
             $('#staff-view').modal('show');
         });
-        /**/
-        $(document).on('click', function() {
+        /*staff delete*/
+        $(document).on('click', 'a#delete-id', function(event) {
+            event.preventDefault();
+            let conn = confirm('Are you sure ?');
 
+            if (conn == false)
+            {
+                return false;
+            }else{
+                let id = $(this).attr('staff-delete');
+                $.ajax({
+                    url : 'ajax_template/staff-delete.php',
+                    method: 'POST',
+                    data: {uid : id},
+                    success : function(data){
+                        $('.delete-msg').html(data);
+                        allStaff();
+                    }
+                });
+            }
         });
         /**/
 
