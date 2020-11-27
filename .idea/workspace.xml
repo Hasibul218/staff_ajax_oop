@@ -4,8 +4,6 @@
     <list default="true" id="62a686da-a7bf-44ab-b499-92a024401288" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ajax_template/staff_all.php" beforeDir="false" afterPath="$PROJECT_DIR$/ajax_template/staff_all.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Controller/Staff.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controller/Staff.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/custom.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
@@ -50,7 +48,8 @@
       <workItem from="1605191412249" duration="5147000" />
       <workItem from="1606055411516" duration="5497000" />
       <workItem from="1606376677332" duration="1842000" />
-      <workItem from="1606404794805" duration="12370000" />
+      <workItem from="1606404794805" duration="12810000" />
+      <workItem from="1606457448421" duration="4049000" />
     </task>
     <servers />
   </component>

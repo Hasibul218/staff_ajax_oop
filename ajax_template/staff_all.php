@@ -20,7 +20,7 @@
             <td><img src="photos/staff/<?php echo $d['photo']; ?>" alt=""></td>
             <td>
                 <a class="btn btn-sm btn-info" id="staff-view-id" view-id="<?php echo $d['id']; ?>"  href="#">View</a>
-                <a class="btn btn-sm btn-warning" href="#">Edit</a>
+                <a class="btn btn-sm btn-warning" id="staff-update-id" update-id="<?php echo $d['id']; ?>" href="#">Edit</a>
                 <a class="btn btn-sm btn-danger" id="delete-id" staff-delete="<?php echo $d['id']; ?>" href="#">Delete</a>
             </td>
         </tr>

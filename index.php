@@ -114,7 +114,48 @@
             </div>
         </div>
     </div>
+   <!-- staff update modal-->
+    <div id="staff-update" class="modal fade">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Staff Update</h4>
+                    <button class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="update-msg"></div>
+                    <form id="staff-update-form" action="" method="POST" enctype="multipart/form-data">
+                        <div class="form-group">
+                            <label for="">Name</label>
+                            <input name="name" class="form-control" type="text">
+                        </div>
 
+                        <div class="form-group">
+                            <label for="">Email</label>
+                            <input name="email" class="form-control" type="text">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Cell</label>
+                            <input name="cell" class="form-control" type="text">
+                        </div>
+
+                        <div class="form-group">
+                            <img style="max-width: 100%;" id="staff-photo-load" src="" alt="">
+                            <input name="photo" style="display: none;" class="form-control" type="file" id="staff-photo">
+                            <label for="staff-photo"><img id="img-loader" style="width: 100px; cursor: pointer;" src="assets/media/img/12634-200.png" alt=""></label><br>
+                            <a href="#" id="remove-photo">Remove photo</a>
+
+                        </div>
+                        <div class="form-group">
+                            <input class="btn btn-primary" type="submit" value="Update">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
 
 
 
