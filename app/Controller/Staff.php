@@ -51,4 +51,11 @@
         {
             return $this->delete('staff', $id);
         }
+
+        public function updateStaff($name, $email, $cell,$old_photo, $id)
+        {
+            $sql = "UPDATE staff SET name ='$name', email='$email', cell='$cell',photo='$old_photo' WHERE id='$id'";
+            return $this->update($sql);
+
+        }
     }

@@ -105,18 +105,37 @@
             e.preventDefault();
             let id = $(this).attr('update-id');
             $.ajax({
-                url : 'ajax_template/staff_update.php',
+                url : 'ajax_template/staff_edit.php',
                 method: 'POST',
                 data: {edit_id : id},
                 success: function(data){
                     let staff = JSON.parse(data);
                     $('#staff-update-form input[name="name"]').val(staff.name);
+                    $('#staff-update-form input[name="id"]').val(staff.id);
                     $('#staff-update-form input[name="email"]').val(staff.email);
                     $('#staff-update-form input[name="cell"]').val(staff.cell);
+                    $('#staff-update-form input[name="old-photo"]').val(staff.photo);
                     $('#staff-update-form img#staff-photo-load').attr('src', 'photos/staff/' + staff.photo);
                 }
             });
             $('#staff-update').modal('show');
+        });
+        /*staff update*/
+        $(document).on('submit', 'form#staff-update-form', function(e){
+            e.preventDefault();
+
+            $.ajax({
+                url : 'ajax_template/staff_update.php',
+                method:'POST',
+                data : new FormData(this),
+                contentType: false,
+                processData: false,
+                success: function(data){
+                    $('.delete-msg').html(data);
+                    allStaff();
+                    $('#staff-update').modal('hide');
+                },
+            });
         });
         /**/
 

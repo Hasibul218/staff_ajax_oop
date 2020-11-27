@@ -61,7 +61,13 @@
          * For data update
          */
         public function update($sql){
-            $this ->connection() -> query($sql);
+
+            $status = $this ->connection() -> query($sql);
+            if($status){
+                return true;
+            }else{
+                return false;
+            }
         }
 
         /**

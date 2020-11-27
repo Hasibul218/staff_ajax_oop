@@ -5,10 +5,17 @@
 
 
     $staff = new Staff;
-    $id = $_POST['edit_id'];
+    $id = $_POST['id'];
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $cell = $_POST['cell'];
+    $old_photo = $_POST['old-photo'];
 
-    /*data from database'staff'*/
-    $data = $staff->showStaff($id);
-    $singleStaff = $data->fetch_assoc();
-    echo json_encode($singleStaff);
+
+    $data = $staff->updateStaff($name, $email, $cell,$old_photo, $id);
+    if($data){
+        echo '<p class="alert alert-success"> Staff updated successful !<button class="close" data-dismiss="alert">&times;</button></p>';
+    }
+
+
 
