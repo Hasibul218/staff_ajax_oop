@@ -3,11 +3,26 @@
   <component name="ChangeListManager">
     <list default="true" id="62a686da-a7bf-44ab-b499-92a024401288" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ajax_template/staff_add.php" beforeDir="false" afterPath="$PROJECT_DIR$/ajax_template/staff_add.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ajax_template/staff_update.php" beforeDir="false" afterPath="$PROJECT_DIR$/ajax_template/staff_update.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Controller/Staff.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controller/Staff.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Support/Database.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Support/Database.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/custom.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/photos/staff/03d2331f3341cb1346287bc7695b9268e4a8cf2b3534ea19918479d35ecb9cc8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photos/staff/47df0a056f1ddeb7e6f2e55a13a9ee81IMG_0608.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photos/staff/5da75c4225851c929ecaa0fd05ca1e73images (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photos/staff/65fa3cd74aef6c7a34f91a86d523f99cimages (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photos/staff/682f5517f87859a28633fc5dbee934d1e4a8cf2b3534ea19918479d35ecb9cc8.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photos/staff/7d961eb7ee615ef5820599bd1ec56f72download.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photos/staff/8862773817ada0036f85fa358f78fa651.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photos/staff/8d28e0de5bc1dde0c7aac1d7e2e8b7831.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photos/staff/b6073a01f4e07c0b65aed914ed5387c12.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photos/staff/bd1727c584ce693d6da0e774d39539b8images.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photos/staff/c4fd895aa58a9a6b1644cc959ebae50cIMG_0608.JPG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photos/staff/c618a30ced2fc80745988c1fa52c74f12.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photos/staff/eeb360bd0eca0fadbf3c46fb6530f2da3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photos/staff/f4ec546dcd3378caac5ddae811c97394images (1).jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/photos/staff/fe7a9754f65be811af2e40281866488edownload.jpg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +66,12 @@
       <workItem from="1606055411516" duration="5497000" />
       <workItem from="1606376677332" duration="1842000" />
       <workItem from="1606404794805" duration="12810000" />
-      <workItem from="1606457448421" duration="11987000" />
+      <workItem from="1606457448421" duration="12295000" />
+      <workItem from="1606581424275" duration="370000" />
+      <workItem from="1606582837110" duration="679000" />
+      <workItem from="1608236465420" duration="44000" />
+      <workItem from="1609344423808" duration="2896000" />
+      <workItem from="1609350020845" duration="3438000" />
     </task>
     <servers />
   </component>
@@ -59,10 +79,18 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1608236510117">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="463" y="138" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1608236510117" />
     <state x="608" y="139" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1606060319655">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="608" y="139" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1050@0.0.1920.1050" timestamp="1606060319655" />
+    <state x="0" y="0" width="629" height="768" key="find.popup" timestamp="1609353201611">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="0" y="0" width="629" height="768" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1609353201611" />
     <state x="616" y="243" key="run.anything.popup" timestamp="1604851779511">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

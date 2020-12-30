@@ -15,13 +15,16 @@
     $file_name = $_FILES['photo']['name'];
     $file_name_tmp = $_FILES['photo']['tmp_name'];
     $unique_name = md5(time().rand()) . $file_name ;
-
-    move_uploaded_file($file_name_tmp, '../photos/staff/'. $unique_name);
-
-
-    $data = $staff -> createStaff($name, $email, $cell, $unique_name);
-
-    if ($data){
-        echo '<p class="alert alert-success"> Staff added successful !<button class="close" data-dismiss="alert">&times;</button></p>';
+    if (!empty($file_name)){
+        $photo_name = $unique_name;
+        move_uploaded_file($file_name_tmp, '../photos/staff/'. $unique_name);
+        $data = $staff -> createStaff($name, $email, $cell,$photo_name);
+        if ($data){
+            echo '<p class="alert alert-success"> Staff added successful !<button class="close" data-dismiss="alert">&times;</button></p>';
+        }
+    }else{
+        echo '<p class="alert alert-danger"> Photo empty !<button class="close" data-dismiss="alert">&times;</button></p>';
     }
+
+
 

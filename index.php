@@ -142,9 +142,9 @@
 
                         <div class="form-group">
                             <img style="max-width: 100%;" id="staff-photo-load" src="" alt="">
-                            <input name="old-photo" style="display: none;" class="form-control" type="text">
-                            <input name="new-photo" style="display: none;" class="form-control" type="file" id="staff-photo">
-                            <label for="staff-photo"><img id="img-loader" style="width: 100px; cursor: pointer;" src="assets/media/img/12634-200.png" alt=""></label><br>
+                            <input name="old-photo" style="display: none;" class="form-control" type="hidden">
+                            <input name="n-photo" style="display: none;" class="form-control" type="file" id="staff-photo-update">
+                            <label for="staff-photo-update"><img id="img-loader" style="width: 100px; cursor: pointer;" src="assets/media/img/12634-200.png" alt=""></label><br>
                             <a href="#" id="remove-photo">Remove photo</a>
 
                         </div>

@@ -8,6 +8,12 @@
             $('img#img-loader').hide();
             $('a#remove-photo').show();
         });
+        $('input#staff-photo-update').change(function(e){
+            let file_url  = URL.createObjectURL(e.target.files[0]);
+            $('img#staff-photo-load').attr('src', file_url);
+            $('img#img-loader').hide();
+            $('a#remove-photo').show();
+        });
         /*Remove Photos*/
         $(document).on('click','a#remove-photo', function(e){
             e.preventDefault();
