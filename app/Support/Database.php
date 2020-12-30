@@ -83,6 +83,25 @@
             }
         }
 
+        /**
+         * @param $col
+         * @param $tbl
+         * @param $val
+         * Value check
+         */
+        public function valueCheck($col, $tbl, $val){
+            $query = "SELECT $col FROM $tbl WHERE $col='$val'";
+            $status = $this ->connection() -> query($query);
+            $num = $status -> num_rows;
+            if ($num>0)
+            {
+                return false;
+            }else{
+                return true;
+            }
+
+        }
+
 
 
 

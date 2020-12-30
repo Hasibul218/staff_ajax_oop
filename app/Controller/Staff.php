@@ -58,5 +58,7 @@
             return $this->update($sql);
 
         }
-        
+        public function emailCheck($email){
+            return $this->valueCheck('email', 'staff', $email);
+        }
     }

@@ -60,7 +60,8 @@
 
                         <div class="form-group">
                             <label for="">Email</label>
-                            <input name="email" class="form-control" type="text">
+                            <input name="email" class="form-control" type="text" id="email_validate">
+                            <span id="email_check"></span>
                         </div>
 
                         <div class="form-group">

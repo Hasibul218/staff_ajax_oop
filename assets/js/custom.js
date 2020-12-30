@@ -145,7 +145,24 @@
         });
         /**/
 
+        $(document).on('keyup', 'input#email_validate', function (){
+            let email = $(this).val();
+            $.ajax({
+                url : 'ajax_template/staff_email_check.php',
+                method : 'POST',
+                data : {email : email},
+                success : function (data){
+                    if (data=="ok"){
+                        $('#staff-form input[type="submit"]').removeAttr('disabled');
+                        $('#email_check').html('');
+                    }else if (data=="not"){
+                        $('#staff-form input[type="submit"]').attr('disabled','');
+                        $('#email_check').html('<span style=\'color: red\'> Email already exits </span>');
+                    }
+                }
+            });
 
+        });
 
 
 
