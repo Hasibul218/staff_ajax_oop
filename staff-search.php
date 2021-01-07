@@ -13,31 +13,24 @@
 	
 
 	<div class="wrap-table ">
-        <a data-toggle="modal" class="btn btn-primary btn-sm" href="#staff-modal">Add new staff</a>
-        <a class="btn btn-primary btn-sm" href="staff-search.php">Search</a>
+        <a class="btn btn-primary btn-sm" href="index.php">All Staff</a>
         <br>
         <br>
 		<div class="card shadow">
             <div class="delete-msg"></div>
 			<div class="card-body">
-				<h2>All Staff</h2>
-				<table class="table table-striped">
-					<thead>
-						<tr>
-							<th>#</th>
-							<th>Name</th>
-							<th>Email</th>
-							<th>Cell</th>
-							<th>Photo</th>
-							<th>Action</th>
-						</tr>
-					</thead>
-					<tbody id="staff_all">
+				<h2>Staff Search</h2>
+                <span id="ttt"></span>
+                <div class="search-area">
+                    <input id="search_text" class="form-control" type="text" placeholder="Staff Search Here">
+                    <hr>
+                    <ul id="search_res">
 
-						
 
-					</tbody>
-				</table>
+
+                    </ul>
+                </div>
+
 			</div>
 		</div>
 	</div>

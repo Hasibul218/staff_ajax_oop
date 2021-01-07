@@ -102,7 +102,13 @@
 
         }
 
-
+        /**
+         * @param $sql
+         * @return bool|\mysqli_result
+         */
+        public function customQuery($sql){
+           return $this ->connection() -> query($sql);
+        }
 
 
     }

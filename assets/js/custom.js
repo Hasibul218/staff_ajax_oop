@@ -144,7 +144,9 @@
             });
         });
         /**/
-
+        /**
+         * ajax email check
+         */
         $(document).on('keyup', 'input#email_validate', function (){
             let email = $(this).val();
             $.ajax({
@@ -163,8 +165,21 @@
             });
 
         });
+        /**
+         * ajax staff search
+         */
+        $(document).on('keyup', 'input#search_text', function (){
+            let search_text = $(this).val();
 
-
+            $.ajax({
+                url : 'ajax_template/staff_search.php',
+                data : {search : search_text},
+                method : 'POST',
+                success : function (data){
+                    $('#search_res').html(data);
+                }
+            });
+        });
 
     });
 })(jQuery)

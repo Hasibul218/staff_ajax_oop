@@ -61,4 +61,11 @@
         public function emailCheck($email){
             return $this->valueCheck('email', 'staff', $email);
         }
+
+        /**
+         * @param $search staff
+         */
+        public function staffSearch($search){
+            return $this->customQuery("SELECT * FROM staff WHERE name LIKE '%$search%' OR cell LIKE '%$search%'");
+        }
     }
